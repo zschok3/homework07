@@ -1,0 +1,62 @@
+Unit Test for baseline BST implementation
+Input: 
+15 10 20 8 12 16 25 
+Sorted input: 
+8 10 12 15 16 20 25 
+----------
+BST min: 8
+BST max: 25
+----------
+----------
+BST walk
+8
+10
+12
+15
+16
+20
+25
+----------
+----------
+Predecessor/Successor
+15 pred: 12 succ: 16
+10 pred: 8 succ: 12
+20 pred: 16 succ: 25
+8 pred: none succ: 10
+12 pred: 10 succ: 15
+16 pred: 15 succ: 20
+25 pred: 20 succ: none
+----------
+----------
+tree_search() with fake keys
+Found 16
+11 was not found
+21 was not found
+9 was not found
+13 was not found
+17 was not found
+26 was not found
+----------
+----------
+tree_search() and delete_node()
+---- deleting 15-----
+8
+10
+12
+15
+20
+25
+---- deleting 10-----
+8
+10
+15
+20
+25
+----------
+Usage: ./bst
+Options:
+	-h or --help            Display this information
+	-t or --test n          BST Unit Test with n elements
+	-s or --seed s          Rand # seed value
+	-i or --input ifname    Input file
+	-o or --output ofname   Output file
